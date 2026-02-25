@@ -119,6 +119,10 @@ function Doctors() {
             {/* CTA Button */}
             <a
               href="https://weedmedcare.lovable.app/comecar"
+              onClick={() => {
+                (window as any).dataLayer = (window as any).dataLayer || [];
+                (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'doctors' });
+              }}
               className="inline-flex items-center gap-2 px-8 py-3 text-base font-semibold text-white rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ease-out"
               style={{
                 background: 'linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%)',
@@ -131,7 +135,7 @@ function Doctors() {
                 e.currentTarget.style.background = 'linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%)';
               }}
             >
-              Comece agora
+              Iniciar tratamento
               <svg
                 className="w-5 h-5"
                 fill="none"

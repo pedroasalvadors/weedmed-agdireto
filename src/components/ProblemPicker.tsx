@@ -118,6 +118,10 @@ function ProblemPicker() {
             <motion.a
               key={problem.label}
               href="https://weedmedcare.lovable.app/comecar"
+              onClick={() => {
+                (window as any).dataLayer = (window as any).dataLayer || [];
+                (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'problem_picker', cta_label: problem.label });
+              }}
               className={`flex items-center gap-3 px-5 py-5 rounded-2xl border-2 transition-all duration-300 group shadow-sm hover:shadow-md ${problem.bgColor} ${problem.hoverBg} ${problem.borderColor} ${problem.hoverBorder}`}
               variants={itemVariants}
               whileHover={{ scale: 1.03 }}

@@ -22,7 +22,7 @@ function Header() {
           href="https://weedmedcare.lovable.app/comecar"
           className="text-sm font-medium text-gray-900 underline hover:no-underline"
         >
-          Inicie seu tratamento em menos de 1 semana com preço acessível →
+          Sua consulta em poucos minutos por R$ 50,00 →
         </a>
       </div>
 
@@ -77,7 +77,7 @@ function Header() {
                   e.currentTarget.style.background = 'linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%)';
                 }}
               >
-                Começar agora
+                Iniciar tratamento
               </a>
 
               {/* Mobile Menu Button */}
@@ -142,7 +142,7 @@ function Header() {
                   e.currentTarget.style.background = 'linear-gradient(135deg, #523AC5 0%, #7c5ce7 100%)';
                 }}
               >
-                Começar agora
+                Iniciar tratamento
               </a>
             </div>
           </div>

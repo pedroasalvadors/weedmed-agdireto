@@ -132,14 +132,18 @@ function Benefits() {
                 </p>
                 <a
                   href="https://weedmedcare.lovable.app/comecar"
-                  onClick={(e) => e.stopPropagation()}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    (window as any).dataLayer = (window as any).dataLayer || [];
+                    (window as any).dataLayer.push({ event: 'cta_click', cta_location: 'benefits' });
+                  }}
                   className="px-4 py-2 text-sm font-semibold text-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 inline-block"
                   style={{
                     background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
                     boxShadow: '0 4px 15px rgba(34, 197, 94, 0.4)',
                   }}
                 >
-                  Começar agora
+                  Iniciar tratamento
                 </a>
               </div>
             </motion.div>
