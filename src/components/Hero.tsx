@@ -68,27 +68,47 @@ function Hero() {
             Cannabis medicinal com avaliação médica e suporte humano em todas as etapas
           </p>
 
-          {/* CTA Button */}
-          <motion.a
-            href="https://weedmedcare.lovable.app/comecar"
-            className="inline-flex items-center justify-center px-8 py-4 md:px-10 md:py-5 text-lg md:text-xl font-semibold text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-out"
-            style={{
-              background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
-              boxShadow: '0 10px 30px rgba(34, 197, 94, 0.4)',
-            }}
+          {/* CTA Buttons */}
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            whileHover={{ scale: 1.05 }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(135deg, #16a34a 0%, #15803d 50%, #166534 100%)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)';
-            }}
           >
-            Iniciar tratamento
-          </motion.a>
+            <a
+              href="https://weedmedcare.lovable.app/comecar"
+              data-cta="hero"
+              className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-semibold text-white rounded-full transition-all duration-300 ease-out hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
+                boxShadow: '0 10px 30px rgba(34, 197, 94, 0.4)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'linear-gradient(135deg, #16a34a 0%, #15803d 50%, #166534 100%)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)';
+              }}
+            >
+              Iniciar tratamento
+            </a>
+            <a
+              href="https://weedmedcare.lovable.app/cadastro?redirect=/paciente/upload-receita"
+              data-cta="hero-receita"
+              className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-semibold text-white/90 rounded-full transition-all duration-300 ease-out hover:scale-105 hover:bg-white/15"
+              style={{
+                border: '2px solid rgba(255, 255, 255, 0.7)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#ffffff';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.7)';
+              }}
+            >
+              Já tenho receita
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>
