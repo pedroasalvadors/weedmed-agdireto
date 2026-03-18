@@ -13,7 +13,7 @@ function Hero() {
         {/* Right Image - Behind text on small/medium, beside on large */}
         {/* No opacity animation to improve LCP */}
         <motion.div
-          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-24 md:-bottom-52 lg:-bottom-48 pointer-events-none"
+          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-16 md:-bottom-28 lg:-bottom-24 pointer-events-none"
           initial={{ x: 50 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
