@@ -13,7 +13,7 @@ function Hero() {
         {/* Right Image - Behind text on small/medium, beside on large */}
         {/* No opacity animation to improve LCP */}
         <motion.div
-          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-12 md:-bottom-16 lg:-bottom-10 pointer-events-none"
+          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-36 md:-bottom-44 lg:-bottom-40 pointer-events-none"
           initial={{ x: 50 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -21,7 +21,7 @@ function Hero() {
           <img
             src="/woman2.webp"
             alt="Paciente satisfeita"
-            className="h-[350px] md:h-[450px] lg:h-[620px] w-auto object-contain object-bottom"
+            className="h-[500px] md:h-[640px] lg:h-[860px] w-auto object-contain object-bottom"
             fetchPriority="high"
             decoding="async"
           />
@@ -91,22 +91,6 @@ function Hero() {
               }}
             >
               Iniciar tratamento
-            </a>
-            <a
-              href="https://weedmedcare.lovable.app/cadastro?redirect=/paciente/upload-receita"
-              data-cta="hero-receita"
-              className="inline-flex items-center justify-center px-8 py-4 sm:px-10 sm:py-5 text-lg sm:text-xl font-semibold text-white/90 rounded-full transition-all duration-300 ease-out hover:scale-105 hover:bg-white/15"
-              style={{
-                border: '2px solid rgba(255, 255, 255, 0.7)',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#ffffff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.7)';
-              }}
-            >
-              Já tenho receita
             </a>
           </motion.div>
         </div>
