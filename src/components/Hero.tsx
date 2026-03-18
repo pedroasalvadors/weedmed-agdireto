@@ -13,7 +13,7 @@ function Hero() {
         {/* Right Image - Behind text on small/medium, beside on large */}
         {/* No opacity animation to improve LCP */}
         <motion.div
-          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-36 md:-bottom-44 lg:-bottom-40 pointer-events-none"
+          className="absolute -right-20 md:-right-10 lg:right-8 -bottom-24 md:-bottom-52 lg:-bottom-48 pointer-events-none"
           initial={{ x: 50 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -21,7 +21,7 @@ function Hero() {
           <img
             src="/woman2.webp"
             alt="Paciente satisfeita"
-            className="h-[500px] md:h-[640px] lg:h-[860px] w-auto object-contain object-bottom"
+            className="h-[400px] md:h-[500px] lg:h-[680px] w-auto object-contain object-bottom"
             fetchPriority="high"
             decoding="async"
           />
