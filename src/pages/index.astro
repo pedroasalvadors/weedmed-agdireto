@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import HeaderStatic from '../components/HeaderStatic.astro'
 import HeroStatic from '../components/HeroStatic.astro'
+import TrustBar from '../components/TrustBar'
 import VideoTestimonials from '../components/VideoTestimonials'
 import Benefits from '../components/Benefits'
 import ProblemPicker from '../components/ProblemPicker'
@@ -20,6 +21,7 @@ import Footer from '../components/Footer'
     <!-- Above the fold - Static HTML for fast LCP -->
     <HeaderStatic currentPath="/" />
     <HeroStatic />
+    <TrustBar client:load />
 
     <!-- Below the fold - Hydrated when visible -->
     <VideoTestimonials client:visible />
