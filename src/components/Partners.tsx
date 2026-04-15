@@ -43,12 +43,12 @@ function Partners() {
           transition={{ duration: 0.6 }}
         >
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl text-gray-800 font-bold"
-            style={{ fontFamily: 'Inter, sans-serif' }}
+            className="text-3xl md:text-4xl font-bold"
+            style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif", color: '#2D1B69' }}
           >
             Parceiros
           </h2>
-          <div className="w-24 h-1 mt-3" style={{ backgroundColor: '#65DFA8' }} />
+          <div className="w-12 h-1 mt-3" style={{ backgroundColor: '#00B383' }} />
         </motion.div>
 
         {/* Logos Grid */}

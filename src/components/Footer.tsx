@@ -2,17 +2,8 @@
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#523AC5] text-white overflow-hidden pt-16 pb-8">
-      {/* Background Logo - Huge and low opacity */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-         <img
-            src="/logo-horizontal-branco_1@2x.webp"
-            alt=""
-            className="w-[80%] max-w-none opacity-[0.03] transform scale-100"
-         />
-      </div>
-
-      <div className="relative z-10 container mx-auto px-6 max-w-7xl">
+    <footer className="text-white pt-16 pb-8" style={{ backgroundColor: '#2D1B69' }}>
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center mb-12">
 
           {/* Social Media Section */}

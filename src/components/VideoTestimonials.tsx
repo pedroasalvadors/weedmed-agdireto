@@ -93,13 +93,10 @@ function VideoTestimonials() {
     const container = scrollRef.current
     if (!container) return
 
-    // Start with "Paciente eliminou" and "Filha relata" centered (index 2 and 3)
+    // Start at the beginning of the second set for clean infinite scroll
     const cardWidth = 240 + 20 // w-60 (240px) + gap-5 (20px)
     const singleSetWidth = cardWidth * videos.length
-    const containerCenter = container.clientWidth / 2
-    // Center point between cards at index 2 and 3: card2_start + card_width + gap/2
-    const centerBetweenCards = singleSetWidth + (cardWidth * 2) + 240 + 10
-    container.scrollLeft = centerBetweenCards - containerCenter
+    container.scrollLeft = singleSetWidth
 
     const handleScroll = () => {
       if (isScrolling) return
@@ -126,9 +123,22 @@ function VideoTestimonials() {
   }, [isScrolling])
 
   return (
-    <section className="bg-white overflow-hidden relative">
-      {/* Spacer */}
-      <div className="pt-16 md:pt-20" />
+    <section id="depoimentos" className="bg-white overflow-hidden relative">
+      {/* Header */}
+      <div className="pt-16 md:pt-20 pb-10 px-6 sm:px-8 lg:px-12 max-w-6xl mx-auto">
+        <h2
+          className="text-3xl md:text-4xl font-bold mb-2"
+          style={{ fontFamily: "'Plus Jakarta Sans', 'Inter', system-ui, sans-serif", color: '#2D1B69' }}
+        >
+          Histórias reais de pacientes
+        </h2>
+        <p
+          className="text-gray-500 text-base"
+          style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
+        >
+          Mais de 3.000 pessoas que transformaram sua saúde com cannabis medicinal.
+        </p>
+      </div>
 
       {/* Carousel - infinite scroll */}
       <motion.div
