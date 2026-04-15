@@ -88,7 +88,7 @@ export default function Steps() {
               className="text-sm text-gray-500 leading-relaxed mb-6 flex-1"
               style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
             >
-              Envie sua receita e nosso sistema identifica o produto certo — <strong className="text-gray-700 font-semibold">direto para o checkout, sem burocracia</strong>.
+              Envie sua receita e nosso sistema identifica o produto certo. <strong className="text-gray-700 font-semibold">Direto para o checkout, sem burocracia.</strong>
             </p>
             <a
               href="https://weedmed.online/cadastro?redirect=/paciente/upload-receita"
@@ -187,7 +187,7 @@ export default function Steps() {
               className="text-sm text-gray-500 leading-relaxed mb-6 flex-1"
               style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
             >
-              Fale com um <strong className="text-gray-700 font-semibold">consultor especialista</strong> pelo WhatsApp. Em minutos ele entende sua situação e te orienta sobre o melhor caminho.
+              Fale <strong className="text-gray-700 font-semibold">gratuitamente</strong> com um consultor especialista pelo WhatsApp. Em minutos ele entende sua situação e te orienta sobre o melhor caminho.
             </p>
             <button
               onClick={() => document.querySelector<HTMLElement>('.open-chat')?.click()}

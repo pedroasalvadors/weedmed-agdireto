@@ -20,12 +20,12 @@ const faqs: FAQItem[] = [
   {
     question: 'Posso parcelar a consulta e o tratamento?',
     answer:
-      'A consulta médica de R$50 pode ser paga via Pix ou cartão de crédito. Os medicamentos também aceitam parcelamento — as condições aparecem no checkout no momento da compra.',
+      'A consulta médica de R$50 pode ser paga via Pix ou cartão de crédito. Os medicamentos também aceitam parcelamento; as condições aparecem no checkout no momento da compra.',
   },
   {
     question: 'Em quanto tempo recebo o medicamento?',
     answer:
-      'Os produtos são importados e chegam em média em 10 a 15 dias úteis após o pedido faturado. Trabalhamos para reduzir esse prazo — em breve também teremos produtos nacionais com entrega mais rápida.',
+      'Os produtos são importados e chegam em média em 10 a 15 dias úteis após o pedido faturado. Trabalhamos para reduzir esse prazo. Em breve também teremos produtos nacionais com entrega mais rápida.',
   },
   // ICP 1 — Ana (segurança, legalidade)
   {
@@ -47,7 +47,7 @@ const faqs: FAQItem[] = [
   {
     question: 'Terei suporte depois da consulta?',
     answer:
-      'Sim. Acompanhamento farmacêutico contínuo está incluso em todos os tratamentos. Além disso, nossa equipe está disponível para tirar dúvidas sobre uso, dosagem e próximos passos. Aqui você não é só atendido — você é acompanhado.',
+      'Sim. Acompanhamento farmacêutico contínuo está incluso em todos os tratamentos. Além disso, nossa equipe está disponível para tirar dúvidas sobre uso, dosagem e próximos passos. Aqui você não é só atendido: você é acompanhado.',
   },
 ]
 
