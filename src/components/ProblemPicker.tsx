@@ -147,12 +147,12 @@ export default function ProblemPicker() {
               <motion.button
                 key={problem.label}
                 onClick={() => setActiveIndex(index)}
-                className="group flex items-start gap-2 md:gap-3 px-3 py-4 md:px-5 md:py-5 rounded-2xl border border-gray-200 bg-white hover:border-[#00B383] hover:bg-[#EDE9F8] transition-all duration-250 shadow-sm hover:shadow-md text-left w-full"
+                className="group flex items-center md:items-start gap-2 md:gap-3 px-3 py-4 md:px-5 md:py-5 rounded-2xl border border-gray-200 bg-white hover:border-[#00B383] hover:bg-[#EDE9F8] transition-all duration-250 shadow-sm hover:shadow-md text-left w-full"
                 variants={itemVariants}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 mt-0.5">
+                <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 md:mt-0.5">
                   <img
                     src={problem.image}
                     alt={problem.label}
@@ -168,14 +168,14 @@ export default function ProblemPicker() {
                     {problem.label}
                   </span>
                   <span
-                    className="block text-[10px] md:text-xs text-gray-400 group-hover:text-[#7c3aed]/70 transition-colors duration-200 leading-snug mt-0.5"
+                    className="hidden md:block text-xs text-gray-400 group-hover:text-[#7c3aed]/70 transition-colors duration-200 leading-snug mt-0.5"
                     style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
                   >
                     {problem.tagline}
                   </span>
                 </div>
                 <svg
-                  className="w-4 h-4 text-gray-400 group-hover:text-[#00B383] group-hover:translate-x-1 transition-all duration-200 flex-shrink-0 mt-1"
+                  className="w-4 h-4 text-gray-400 group-hover:text-[#00B383] group-hover:translate-x-1 transition-all duration-200 flex-shrink-0 md:mt-1"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
