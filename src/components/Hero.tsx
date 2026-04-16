@@ -28,7 +28,7 @@ function Hero() {
         </motion.div>
 
         {/* Left Content */}
-        <div className="relative z-10 py-16 md:py-20 lg:py-28 lg:max-w-[60%]">
+        <div className="relative z-10 py-16 md:py-20 lg:py-28 max-w-[65%] md:max-w-[60%] lg:max-w-[60%]">
           {/* Google Reviews Badge */}
           <motion.div
             className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8"
