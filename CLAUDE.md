@@ -1,5 +1,31 @@
 # CLAUDE.md
 
+> ## ⚠️ Você está em uma de CINCO landers quase idênticas
+>
+> | | |
+> |---|---|
+> | **Domínio** | `www.weedmedbr.com.br` |
+> | **Compliance** | COM cannabis (marca weedmed completa) |
+> | **CTA** | link para /avaliacao |
+>
+> As outras quatro variantes estão em `~/oficialwm/`. **Mudança certa numa é errada
+> na outra.** A matriz completa dos cinco (domínio, eixo de cannabis, eixo de CTA)
+> está em `~/Desktop/_CONTEXTO_CLAUDE/04_STACK_E_DEPLOY.md`.
+>
+> Em repo de link, o CTA é âncora e nunca deve virar `<button class="open-chat">`.
+> Em repo Leadster, o CTA é `<button type="button" class="open-chat">`.
+>
+> **Contexto de negócio** (ICP, marca, compliance de cannabis, números oficiais,
+> metas do mês) não está aqui. Está em `~/Desktop/_CONTEXTO_CLAUDE/`, começando
+> pelo `00_LEIA_PRIMEIRO.md`. Regras que valem para todo projeto weedmed:
+> `~/weedmedcare/docs/REGRAS-DA-CASA.md`.
+>
+> Duas que sempre pegam: **nunca usar travessão** em nada, e a marca escreve-se
+> `weedmed` em caixa baixa (nesta lander, `weemed` quando a copy evita cannabis).
+>
+> Antes de dar push: `git checkout -- public/sitemap.xml`, `git rebase origin/main`,
+> e **build verde confirmado**.
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Development Commands
